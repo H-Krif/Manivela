@@ -195,7 +195,7 @@ a:focus {
   background: url(Material/Pics/Instagram/shadows-color.webp) 0% 56% / 100%;
   position: absolute;
   top: 3rem;
-  left: 22%;
+  left: 26%;
   width: 70rem;
   box-sizing: content-box;
   outline: 5px double orange;
@@ -234,8 +234,8 @@ a:hover {
   width: 30rem;
   height: 15rem;
   position: absolute;
-  right: 30rem;
-  bottom: 10rem;
+  right: 44rem;
+  bottom: 15rem;
   border-radius: 10%;
   border-top-left-radius: 50%;
 }
@@ -261,8 +261,8 @@ h2 {
 .frame {
   width: 45rem;
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 40%;
+  left: 27%;
   transform: rotate(-20deg);
   border-radius: 10%;
   border: 10px outset #fd5d00c5;
@@ -297,7 +297,7 @@ h2 {
   position: absolute;
   width: 57%;
   top: 20rem;
-  left: 27rem;
+  left: 40rem;
   gap: 10rem;
   overflow: hidden;
 }
@@ -321,10 +321,10 @@ h2 {
 .workshop-icon-container > p {
   position: absolute;
   top: 50rem;
-  left: 27rem;
+  left: 40rem;
   font-family: Mansalva;
   font-size: 2rem;
-  width: 57%;
+  width: 50%;
   text-align: justify;
 }
 
@@ -334,7 +334,7 @@ h2 {
   position: absolute;
   display: grid;
   top: 70rem;
-  left: 20rem;
+  left: 25rem;
   width: 66%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 20rem 20rem;
@@ -349,6 +349,7 @@ h2 {
     url(Material/Background/felos-background.jpg) 0% 0% / 100%;
 
   border-radius: 10%;
+  justify-items: center;
 }
 
 .image-container > img {
@@ -401,7 +402,7 @@ h2 {
 .info {
   position: absolute;
   top: 120rem;
-  left: 42%;
+  left: 44%;
   margin: auto;
   font-size: 3rem;
   font-family: Mansalva;
@@ -412,7 +413,7 @@ h2 {
 .text-container {
   position: absolute;
   top: 129rem;
-  left: 23%;
+  left: 25%;
 }
 
 .text-container > ul {
@@ -445,7 +446,7 @@ li > p {
 .button-container {
   position: absolute;
   top: 150rem;
-  left: 24rem;
+  left: 20%;
   display: flex;
   width: 60%;
   height: 20rem;
