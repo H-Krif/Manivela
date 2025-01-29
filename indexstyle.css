@@ -1,17 +1,3 @@
-/* test colors
-
-Main: #CBA35C;
-soft: #F8E1B7;
-*/
-
-/* .kablammo-font {
-  font-family: "Kablammo", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "MORF" 0;
-} */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,201 +5,63 @@ soft: #F8E1B7;
   font-size: 62.5%;
 }
 
-/* TRY 1 */
-
-/* .workshops-container {
-  width: 100vw;
-  height: 100vh;
+.icon-container {
   display: flex;
-  background: url(Material/Pics/Workshops/icon-workshop.jpg) top 60% left -5% / 50rem
-      50rem no-repeat,
-    #f4c90b;
-  background-blend-mode: darken;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-h1 {
-  font-size: 8rem;
-  font-family: Mansalva;
-  color: #c90bf4;
-  position: absolute;
-  top: 29%;
-  left: 31%;
+.icon-repeat-container-left {
+  display: inline-block;
+  width: 15%;
+  background: url(Material/Pics/Workshops/icon-workshop-trans.png) 0% 0% / 100%
+    repeat-y;
 }
 
-h2 {
-  font-size: 4rem;
-  font-family: Mansalva;
-  color: #0bc4f9;
-  position: absolute;
-  top: 65%;
-  left: 23%;
-} */
-
-/* .fake-menu {
-  position: absolute;
-  right: 3%;
-  top: 5%;
+.icon-repeat-container-right {
+  display: inline-block;
+  width: 15%;
+  background: url(Material/Pics/Workshops/icon-workshop-trans.png) 95% 50% /
+    100% repeat-y;
+  margin-left: auto;
 }
 
-ul {
+.content-container {
+  width: 100%;
   display: flex;
-  list-style-type: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-a {
-  margin-right: 1rem;
-  border-bottom: 0.3rem ridge #360bf4;
-
-  padding: 1rem;
-  font-family: Mansalva;
-}
-
-li {
-  text-decoration: none;
-}
-
-a:link {
-  font-size: 2rem;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-a:hover,
-a:active {
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-a:focus {
-  color: #0baaf4;
-}
-
-.fake-tag {
-  border: 0.5rem solid #0baaf4;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-} */
-
-/* ---------TRY2 ----------- */
-
-/* .intro-container {
-  width: 100vw;
-  height: 100vh;
-  background: url(Material/Pics/Workshops/paidia-kyklos.jpg) 0% 0% / 100% auto,
-    linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4));
-  background-blend-mode: lighten;
-  position: relative;
-}
-
-.orange-shape {
-  width: 75rem;
-  height: 30rem;
-  position: absolute;
-  right: 30rem;
-  bottom: 10rem;
-  border-radius: 10%;
-  border-top-left-radius: 50%;
-}
-
-.icon {
-  position: absolute;
-  top: 8rem;
-  left: 20rem;
-  height: 30rem;
-} */
-
-/* try2  --- nav --- */
-
-/* .fake-menu {
-  position: absolute;
-  right: 3%;
-  top: 4%;
-  padding: 1rem;
-  box-shadow: -0.5rem 0.5rem 5rem #f4cd0b;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 20%;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-}
-
-a {
-  margin-right: 1rem;
-  color: #ff0385;
-  padding: 1.2rem;
-  padding-bottom: 0.4rem;
-  font-family: Mansalva;
-}
-
-li {
-  text-decoration: none;
-}
-
-a:link {
-  font-size: 2rem;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-a:hover,
-a:active {
-  background-clip: content-box;
-  background-color: rgb(0, 0, 0);
-}
-
-a:focus {
-  color: #0baaf4;
-}
-
-.fake-tag {
-  box-sizing: padding-box;
-  border-bottom: 0.3rem ridge #0baaf4; 
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%; 
-}
- */
-
-/* ------- TRY 3 -------- */
-
-/*icon on top, gradient on bottom  */
-.intro-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  background: url(Material/Pics/Workshops/icon-workshop-trans.png) 0% 1% / 15%
-      repeat-y,
-    url(Material/Pics/Workshops/icon-workshop-trans.png) 95% 50% / 15% repeat-y,
-    #f2f3f4;
-  z-index: -1;
+.menu-container {
+  width: 100%;
+  height: 20rem;
 }
 
 .fake-menu {
-  background: url(Material/Pics/Instagram/shadows-color.webp) 0% 56% / 100%;
-  position: absolute;
-  top: 3rem;
-  left: 26%;
-  width: 70rem;
-  box-sizing: content-box;
   outline: 5px double orange;
-  box-shadow: 0 0 10rem 3rem rgba(255, 0, 0, 0.292);
+  width: 70%;
+  margin: 5rem auto auto auto;
 }
 
-ul {
-  margin-left: 3rem;
+ul.one {
+  background: url(Material/Pics/Instagram/shadows-color.webp) 0% 56% / 100%
+    no-repeat;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  position: relative;
+  padding: 1rem;
 }
 
-li {
-  margin-right: 2rem;
+ul.one > li {
+  position: relative;
+  color: #f2f3f4;
+  z-index: 1;
 }
 
-a {
+ul.one li a {
   display: inline-block;
   text-decoration: none;
   color: rgb(19, 19, 19);
@@ -224,85 +72,77 @@ a {
 }
 
 a:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.55, 0.2),
     color 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  font-weight: 600;
+}
+
+ul.one:first-child {
+  padding-left: 2.5rem;
+}
+
+ul.one:last-child {
+  padding-right: 2.5rem;
+}
+
+.img-shape-container {
+  margin-top: 10rem;
+  margin-left: -10rem;
+  display: flex;
+}
+
+.img-shape-container::after {
+}
+
+.frame {
+  align-self: center;
+  width: 45rem;
+  transform: rotate(-20deg);
+  border-radius: 10%;
+  border: 10px outset #fd5d00c5;
+  position: relative;
+  left: 15%;
 }
 
 .orange-shape {
   width: 30rem;
   height: 15rem;
-  position: absolute;
-  right: 44rem;
-  bottom: 15rem;
   border-radius: 10%;
   border-top-left-radius: 50%;
+  position: relative;
+  top: 40%;
+  left: 15%;
 }
 
 h1 {
-  position: absolute;
-  left: 57%;
-  top: 57%;
   font-size: 4rem;
   font-family: Mansalva;
   color: #600f72;
+  position: relative;
+  left: 30%;
+  top: -5%;
 }
 
 h2 {
   font-size: 1.8rem;
   font-family: Mansalva;
   color: #720f53;
-  position: absolute;
-  top: 74%;
-  left: 54%;
-}
-
-.frame {
-  width: 45rem;
-  position: absolute;
-  top: 40%;
-  left: 27%;
-  transform: rotate(-20deg);
-  border-radius: 10%;
-  border: 10px outset #fd5d00c5;
-}
-
-/* in-between */
-
-.inbetween::after {
-  position: absolute;
-  content: "";
-  /* outline: 1px ridge rgb(0, 183, 255); */
-  box-shadow: 0 3rem 2px 2px orangered;
-  top: 20rem;
-  width: 200%;
-  left: -30rem;
-}
-
-/* STARTING WITH SCROLLING */
-
-.workshop-icon-container {
   position: relative;
-  height: 170rem;
-  background: url(Material/Pics/Workshops/icon-workshop-trans.png) 0% 1% / 15%
-      repeat-y,
-    url(Material/Pics/Workshops/icon-workshop-trans.png) 95% 50% / 15% repeat-y,
-    #f2f3f4;
-  z-index: -2;
+  left: 20%;
+  top: 5%;
 }
 
-.flexbox-container {
+.text-img-container {
+  margin-top: 30rem;
   display: flex;
-  position: absolute;
-  width: 57%;
-  top: 20rem;
-  left: 40rem;
-  gap: 10rem;
+  justify-content: center;
+  gap: 20rem;
   overflow: hidden;
 }
 
-.flexbox-container > p {
+.text-img-container > p {
   font-family: Mansalva;
   font-size: 1.6rem;
   flex: 0 1 40rem;
@@ -311,31 +151,27 @@ h2 {
   text-align: justify;
 }
 
-.flexbox-container > img {
+.text-img-container > img {
   height: 20rem;
   transform: rotate(30deg) scale(1.3);
   z-index: -1;
   border: 5px groove #02fd05;
 }
 
-.workshop-icon-container > p {
-  position: absolute;
-  top: 50rem;
-  left: 40rem;
+.img-shape-container ~ p {
+  margin: 10rem auto auto auto;
   font-family: Mansalva;
   font-size: 2rem;
-  width: 50%;
+  width: 70%;
   text-align: justify;
 }
 
 /* IMAGE CONTAINER */
 
 .image-container {
-  position: absolute;
+  margin-top: 20rem;
   display: grid;
-  top: 70rem;
-  left: 25rem;
-  width: 66%;
+  width: 70%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 20rem 20rem;
   gap: 0.2rem;
@@ -400,10 +236,7 @@ h2 {
 /* END OF IMAGE CONTAINER */
 
 .info {
-  position: absolute;
-  top: 120rem;
-  left: 44%;
-  margin: auto;
+  margin-top: 10rem;
   font-size: 3rem;
   font-family: Mansalva;
   text-decoration: underline orangered;
@@ -411,22 +244,27 @@ h2 {
 }
 
 .text-container {
-  position: absolute;
-  top: 129rem;
-  left: 25%;
+  margin-top: 5rem;
 }
 
-.text-container > ul {
+.text-container > p {
+  margin-left: -10rem;
+  font-family: Mansalva;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.text-container > ul.two {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
 }
 
-li {
+ul.two li {
   list-style-type: disc;
 }
 
-ul > li {
+ul.two > li {
   margin-top: 1rem;
 }
 
@@ -435,20 +273,12 @@ li > p {
   font-size: 1.5rem;
 }
 
-.text-container > p {
-  font-family: Mansalva;
-  font-size: 1.5rem;
-  text-align: justify;
-}
-
 /* BUTTONS FOR FAST SCROLLING */
 
 .button-container {
-  position: absolute;
-  top: 150rem;
-  left: 20%;
+  margin-top: 10rem;
   display: flex;
-  width: 60%;
+  width: 70%;
   height: 20rem;
 }
 
@@ -457,6 +287,12 @@ li > p {
   height: 7rem;
   width: 20rem;
   border-radius: 24%;
+}
+
+.button-container button a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Mansalva;
 }
 
 .button-container button:nth-child(1) {
