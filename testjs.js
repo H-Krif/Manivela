@@ -7,7 +7,9 @@ linklis.forEach((item) => {
     contentDivs.forEach((div) => div.classList.remove("visible"));
     const actualDiv = document.querySelector(`.overlay-content${index}`);
 
-    if (actualDiv) actualDiv.classList.add("visible");
+    if (actualDiv) {
+      actualDiv.classList.add("visible");
+    }
   });
 
   item.addEventListener("mouseout", (e) => {
