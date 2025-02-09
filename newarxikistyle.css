@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.header-container {
+  display: flex;
+  height: 15rem;
+  background: url(Material/Background/wall-background.jpg) 0% 0% /100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-logo {
+  height: 16rem;
+  font-weight: 800;
+}
+
+.nav-container {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  font-family: "Zen Kurenaido";
+}
+
+a {
+  display: block;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+a:active {
+  color: inherit;
+}
+
+/* main content */
+
+.way3-container {
+  display: flex;
+  position: relative;
+  height: calc(100vh - 15rem);
+}
+.overlay-content {
+  width: calc(100vw / 3);
+  background: url(Material/Background/matiera-prasino-kokkino-roz.jpg) 80% 98% /
+      108%,
+    rgba(255, 255, 255, 0.21);
+  background-blend-mode: lighten;
+}
+
+.way3-container div:nth-of-type(2) {
+  width: calc(100vw / 3);
+  background: url(Material/Background/matiera-kathetaxrommata.jpg) 41% 91% /
+    117%;
+  transform: rotate(180deg);
+}
+
+.explanation-container {
+  width: calc(100vw / 3);
+  height: 100%;
+  background: url(Material/Background/matiera-megalistaba.jpg) 60% 19% / 115%;
+  background-blend-mode: color-dodge;
+}
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  gap: 6rem;
+  height: 20rem;
+  background: rgba(255, 208, 0, 0.692);
+  mix-blend-mode: color-burn;
+  height: 30rem;
+  width: 75%;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 50%;
+}
+
+/* DIV LEFT */
+
+.overlay-text {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-text {
+  font-family: "Zen Kurenaido";
+  font-size: 5rem;
+}
+
+.starting-text {
+  display: none;
+}
+
+/* END OF DIV LEFT */
+/* DIV MIDDLE */
+
+/* END OF DIV MIDDLE */
+
+.anapoda {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  font-family: "Zen Kurenaido";
+  font-size: 6rem;
+}
+
+/* DIV RIGHT */
+
+.text {
+  width: 90%;
+  margin-top: 5rem;
+  text-align: justify;
+  padding: 0 2rem;
+  font-weight: 500;
+  text-shadow: -1px 1px 10px rgb(255, 187, 0);
+}
+
+.text p {
+  font-size: 2.5rem;
+  font-family: "Zen Kurenaido";
+}
+
+/* END OF DIV RIGHT */
+
+.icon-container a {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto 5rem 1rem;
+}
+
+.icon-container a img {
+  height: 20rem;
+}
+
+/* OVERLAYS */
+
+/* fakemouseover1 */
+
+.fake-mouseover1 {
+  background-color: rgb(255, 200, 0);
+}
+
+.fake-arxiki {
+  background-color: wheat;
+  visibility: hidden;
+}
+
+.fake-mouseover1-a {
+  font-size: 3.5rem;
+}
+
+.hidden {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding: 5rem;
+  gap: 10rem;
+  background: url(Material/Background/matiera-stabesmikroteres.jpg) 0% 0%/ 100%,
+    rgba(255, 255, 255, 0.308);
+  background-blend-mode: lighten;
+}
+
+.categories-container {
+  text-align: center;
+  height: 80vh;
+  margin: -4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: url(Material/Background/matiera-keraunoi.jpg) 0% 0% /100%;
+  gap: 2rem;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0%;
+}
+
+.inner-container {
+  margin-top: 10%;
+  height: calc(100% + 20rem);
+  padding: 5rem;
+}
+
+.hidden p {
+  font-size: 4rem;
+}
+
+.active-mouseover {
+  color: rgb(255, 0, 102);
+}
+
+#important {
+  font-size: 5rem;
+  border-bottom: 10px inset yellow;
+  border-right: 10px inset yellow;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
