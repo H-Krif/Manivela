@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* GENERAL */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-family: "Zen Kurenaido";
+}
+
+img {
+  height: 15rem;
+}
+
+/* END OF GENERAL */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.sketch-container {
+  display: flex;
+}
+
+/* HEADER */
+
+header {
+  display: inherit;
+}
+
+.navigation {
+  background: url(Material/Background/wall-background.jpg) 0% 0% 100%;
+  grid-row: 1/2;
+  grid-column: 1/8;
+}
+
+.logo-container {
+  height: 15rem;
+}
+
+div.logo-container > img {
+  height: 15rem;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: inherit;
+  gap: 1.5rem;
+}
+
+ul.nav-list li {
+  list-style: none;
+}
+
+ul.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Zen Kurenaido";
+  font-weight: 600;
+}
+
+/* END OF HEADER */
+
+.main-content-container {
+  grid-row: 2/8;
+  grid-column: 1/8;
+}
+
+/* OVERLAY */
+
+.overlay {
+  grid-row: 2/6;
+  grid-column: 0/2;
+  background: url(Material/Background/matiera-imp-prasini.jpg) 0% 0% 100%;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.active p {
+  font-size: 2.5rem;
+}
+
+.hideit {
+  display: none;
+}
+
+.overlay-left {
+  background: url(Material/Background/matiera-stabesmikroteres.jpg) 0% 0% 100%;
+}
+
+/* CURRENT */
+
+.current {
+  grid-row: 2/8;
+  grid-column: 2/5;
+  background: url(Material/Background/matiera-kathetaxrommata.jpg) 0% 0% 100%;
+}
+
+.current-location-container {
+  display: flex;
+}
+
+.icontext-container {
+  display: inherit;
+}
+
+.icon-location-container {
+  display: flex;
+}
+
+/* sketch container middle */
+
+/* end of sketch container middle */
+
+/* END OF CURRENT */
+
+/* INFO */
+.explanation-container {
+  display: flex;
+  flex-flow: column wrap;
+  background: url(Material/Background/matiera-megalistaba.jpg) 0% 0% 100%;
+}
+/* END OF INFO */
