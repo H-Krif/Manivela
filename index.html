@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Mansalva&family=Zen+Kurenaido&display=swap"
       rel="stylesheet"
     />
-    <script defer src="newarxiki.js"></script>
+
     <title>Αρχική</title>
   </head>
   <body>
@@ -22,29 +22,29 @@
         </div>
         <nav class="nav-flex">
           <ul class="nav-list">
-            <li data-target="spiti">
+            <li data-link="item0" data-target="spiti">
               <a class="navigation-link" href="#"
                 >Πώς...<br />πάει στο σπίτι;</a
               >
             </li>
-            <li data-target="parastaseis">
+            <li data-link="item1" data-target="parastaseis">
               <a class="navigation-link" href="#">Παραστάσεις</a>
             </li>
-            <li data-target="ergastiria">
+            <li data-link="item2" data-target="ergastiria">
               <a class="navigation-link" href="#">Εργαστήρια</a>
             </li>
-            <li data-target="ek-programmata">
+            <li data-link="item3" data-target="ek-programmata">
               <a class="navigation-link" href="#"
                 >Εκπαιδευτικά <br />Προγράμματα</a
               >
             </li>
-            <li data-target="seminaria">
+            <li data-link="item4" data-target="seminaria">
               <a class="navigation-link" href="#">Σεμινάρια</a>
             </li>
-            <li data-target="div6">
+            <li data-link="item5" data-target="div6">
               <a class="navigation-link" href="#">Γκαλερί</a>
             </li>
-            <li data-target="kouklaKemeis">
+            <li data-link="item6" data-target="kouklaKemeis">
               <a class="navigation-link" href="#">Η κούκλα και εμείς</a>
             </li>
           </ul>
@@ -61,35 +61,58 @@
                 προκαθορισμένος... και καλά.
               </p>
             </div>
-
             <div class="arx-parastaseis overlay-left hideit">
-              <span><a href="">To μαγικό τσουκάλι</a></span>
-              <span><a href="">Ο συνταξιούχος ιδιοκτήτης</a></span>
-              <span><a href="">Η φιλήσυχη ερημοεξερευνήτρια</a></span>
+              <span
+                ><a data-desc="tsoukali" href="">To μαγικό τσουκάλι</a></span
+              >
+              <span
+                ><a data-desc="idioktitis" href=""
+                  >Ο συνταξιούχος ιδιοκτήτης</a
+                ></span
+              >
+              <span
+                ><a data-desc="erimos" href=""
+                  >Η φιλήσυχη ερημοεξερευνήτρια</a
+                ></span
+              >
             </div>
             <div class="arx-ergastiria overlay-left hideit">
-              <span><a href="#">Γενικές κατασκευές κούκλας</a></span>
-              <span><a href="#">Κουκλόψαρο</a></span>
-              <span><a href="#">Δρακόκουκλα</a></span>
+              <span
+                ><a data-desc="gkk" href="#"
+                  >Γενικές κατασκευές κούκλας</a
+                ></span
+              >
+              <span><a data-desc="kouklopsaro" href="#">Κουκλόψαρο</a></span>
+              <span><a data-desc="drakokoukla" href="#">Δρακόκουκλα</a></span>
             </div>
             <div class="arx-ek-programmata overlay-left hideit">
-              <span><a href="">Φιλαναγνωσία</a></span>
-              <span><a href="">Σποροβόμβες</a></span>
-              <span><a href="">Παιχνίδι με σκιά</a></span>
+              <span><a data-desc="filanagnosia" href="">Φιλαναγνωσία</a></span>
+              <span><a data-desc="sporobombes" href="">Σποροβόμβες</a></span>
+              <span><a data-desc="pms" href="">Παιχνίδι με σκιά</a></span>
             </div>
             <div class="arx-seminaria overlay-left hideit">
               <span
-                ><a href="">Συναισθηματική μετουσίωση δια της κούκλας</a></span
+                ><a data-desc="seminario-1" href=""
+                  >Συναισθηματική μετουσίωση δια της κούκλας</a
+                ></span
               >
-              <span><a href="">Η κούκλα σα μέσο επικοινωνίας</a></span>
               <span
-                ><a href="">Τεχνικές δεξιότητες και προβλήματα υγείας</a></span
+                ><a data-desc="seminario-2" href=""
+                  >Η κούκλα σα μέσο επικοινωνίας</a
+                ></span
+              >
+              <span
+                ><a data-desc="seminario-3" href=""
+                  >Τεχνικές δεξιότητες και προβλήματα υγείας</a
+                ></span
               >
             </div>
             <div class="arx-kouklaKemeis overlay-left hideit">
-              <span><a href="">UNIMA</a></span>
-              <span><a href="">ΤΑΡΑΞΑΚΟΣ</a></span>
-              <span><a href="">ΚΟΥΚΛΟΚΕΙΜΕΝΑ</a></span>
+              <span><a data-desc="unima" href="">UNIMA</a></span>
+              <span><a data-desc="taraxakos" href="">ΤΑΡΑΞΑΚΟΣ</a></span>
+              <span
+                ><a data-desc="kouklokeimena" href="">ΚΟΥΚΛΟΚΕΙΜΕΝΑ</a></span
+              >
             </div>
             <!-- NO MORE OVERLAYS -->
           </div>
@@ -110,17 +133,17 @@
             </div>
           </div>
           <div class="sketch-container middle">
-            <a href="">
+            <a data-link="item1" data-target="parastaseis" href="">
               <img
                 src="Material/Pics/Skitsa/sxediaki-augo-trans.png"
                 alt="augo"
             /></a>
-            <a href=""
+            <a data-link="item2" data-target="ergastiria" href=""
               ><img
                 src="Material/Pics/Skitsa/sxediaki-xamogelasta-trans.png"
                 alt="xamogelasta"
             /></a>
-            <a href=""
+            <a data-link="item3" data-target="ek-programmata" href=""
               ><img
                 src="Material/Pics/Skitsa/sxediaki-filanagnosia-trans.png"
                 alt=""
@@ -130,26 +153,131 @@
         <div class="info">
           <div class="explanation-container">
             <div class="currentMouseoverExplanationContainer">
-              <p>
-                Η Μανιβέλα είναι ένα επαγγελματικό κουκλοπαιχτικό
-                εγχείρημα.Εδρεύει στην Αθήνα αλλά άμα πάρει μπρός τρέχα να τη
-                βρείς!
-              </p>
+              <div class="specific-info-tsoukali hideit">
+                <p>
+                  Μια ιστορία για τους μικρούς μας φίλους, σχετική με την
+                  ποσότητα, τον όγκο και την πυκνότητα.
+                </p>
+              </div>
+              <div class="specific-info-idioktitis hideit">
+                <p>
+                  Οι μεγάλοι μας φίλοι προειδοποιούνται πως η σύνταξη τους δεν
+                  φτάνει για την είσοδο τους στην παράσταση.
+                </p>
+              </div>
+              <div class="specific-info-erimos hideit">
+                <p>
+                  Πώς θα ήταν η έρημος με τέτοια νεύρα που έχει επειδή την
+                  έχουμε φτύσει;
+                </p>
+              </div>
+              <div class="specific-info-gkk hideit">
+                <p>
+                  Το εργαστήριο αυτό απευθύνεται σε παιδιά ολοσχερώς,
+                  δημιουργείται κάτω από τις δικές σας προυποθέσεις αναλόγως τι
+                  θέλετε να κάνετε για να περάσετε καλά. Επικοινωνήστε με τη
+                  Μανιβέλα!
+                </p>
+              </div>
+              <div class="specific-info-kouklopsaro hideit">
+                <p>
+                  Αυτή η κούκλα δεν έχει ξαναυπάρξει, ίσως μπορούμε να φτιάξουμε
+                  κάποιο άλλο παρόμοιο δείγμα.
+                </p>
+              </div>
+              <div class="specific-info-drakokoukla hideit">
+                <p>
+                  Από την άλλη μια τέτοια κούκλα θα την κάνουμε να υπάρξει. Θα
+                  βγάζει και φωτιές.
+                </p>
+              </div>
+              <div class="specific-info-filanagnosia hideit">
+                <p>
+                  Ελάτε να διαβάσουμε όλοι μαζί παρέα. Ξέρετε δε ξέρετε
+                  γράμματα, το τέλος είναι ένα: βιβλία στη φωτιά για ζέστη.
+                </p>
+              </div>
+              <div class="specific-info-sporobombes hideit">
+                <p>
+                  Πάντα μια βόμβα χρειάζεται. Αυτή είναι η απόψη του συγγραφέα.
+                  Καλύτερα βέβαια τα παιδιά να φτιάξουν σποροβόμβες.
+                </p>
+              </div>
+              <div class="specific-info-pms hideit">
+                <p>
+                  Το αριστερό χέρι του φωτός είναι το σκοτάδι. Το δεξί χέρι του
+                  σκοταδιού είναι το φως. Τα παιδιά ξετρελαίνονται για
+                  διαλεκτική.
+                </p>
+              </div>
+              <div class="specific-info-seminario-1 hideit">
+                <p>
+                  Τα σεμινάρια απευθύνονται σε ενήλικες. Το συγκεκριμένο αφορά
+                  τις πολλαπλές προβολές της δεδομένης συναισθηματικότητας πάνω
+                  στη κούκλα.
+                </p>
+              </div>
+              <div class="specific-info-seminario-2 hideit">
+                <p>
+                  Και αυτό σαν το προηγούμενο είναι, αλλά θα τα πούμε με άλλα
+                  λόγια, άρα και είναι άλλο σεμινάριο.
+                </p>
+              </div>
+              <div class="specific-info-seminario-3 hideit">
+                <p>
+                  Διαπραγματεύεται της φυσική άσκηση με την αντιστοιχία της με
+                  τα προβλήματα υγείας. Η ενσυναίσθηση δεν είναι πρόβλημα
+                  υγείας.
+                </p>
+              </div>
+              <div class="specific-info-unima hideit">
+                <p>
+                  Η Unima είναι μια οργάνωση, σαν τις άλλες. Κάτι γίνεται εκεί
+                  μεσα.
+                </p>
+              </div>
+              <div class="specific-info-taraxakos hideit">
+                <p>
+                  Είναι ο ταραξάκος, ο ταραξάκο ή το ταραξάκο; Σίγουρα είναι μια
+                  οργάνωση, αλλά δεν είναι σαν τις άλλες και αυτό επειδή το
+                  συναισθηματικό βάρος είναι πιο κοντά μου.
+                </p>
+              </div>
+              <div class="specific-info-kouklokeimena hideit">
+                <p>
+                  Όλα αυτά τα κουκλοκείμενα δεν τα έχω διαβάσει γιατί δεν ξέρω
+                  ποια είναι. Αλλά θα τα διαβάσω και θα σας πω.
+                </p>
+              </div>
+              <div class="specific-info-spiti active">
+                <p>
+                  Η Μανιβέλα είναι ένα επαγγελματικό κουκλοπαιχτικό εγχείρημα.
+                  Εδρεύει στην Αθήνα αλλά άμα πάρει μπρός τρέχα να τη βρείς!
+                </p>
+              </div>
             </div>
             <div class="sketch-container right">
-              <img
-                src="Material/Pics/Skitsa/sxediaki-yfasma-dentro-trans.png"
-                alt=""
-              />
-              <img src="Material/Pics/Skitsa/sxediaki-tvman-trans.png" alt="" />
-              <img
-                src="Material/Pics/Skitsa/sxediaki-anthropaki-simaia-trans.png"
-                alt=""
-              />
+              <a data-link="item4" data-target="seminaria" href=""
+                ><img
+                  src="Material/Pics/Skitsa/sxediaki-yfasma-dentro-trans.png"
+                  alt=""
+              /></a>
+              <a data-link="item5" data-target="gallery" href="">
+                <img
+                  src="Material/Pics/Skitsa/sxediaki-tvman-trans.png"
+                  alt=""
+                />
+              </a>
+              <a data-link="item6" data-target="kouklaKemeis" href="">
+                <img
+                  src="Material/Pics/Skitsa/sxediaki-anthropaki-simaia-trans.png"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script defer src="newarxiki.js"></script>
 </html>

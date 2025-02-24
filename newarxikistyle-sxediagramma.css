@@ -5,7 +5,21 @@
   font-size: 62.5%;
 }
 
+/* COLORS */
+
+:root {
+  --hover-color: rgb(254, 204, 3);
+}
+
+.hover-background {
+  background-color: var(--hover-color);
+}
+
 /* GENERAL */
+
+body {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -34,6 +48,7 @@ img {
 }
 
 .sketch-container {
+  margin-top: auto;
   display: flex;
   gap: 10rem;
   padding: 0 5rem 0 5rem;
@@ -73,13 +88,37 @@ div.logo-container > img {
 }
 
 .nav-list {
-  display: inherit;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4.4rem;
+  height: 100%;
 }
 
 ul.nav-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   list-style: none;
+  position: relative; /* Ensure the li element is positioned relative for the pseudo-element */
+}
+
+ul.nav-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--hover-color);
+  z-index: -1; /* Ensure the background is behind the content */
+  opacity: 0; /* Start with the background hidden */
+  transition: opacity 0.3s; /* Smooth transition for the background */
+}
+
+ul.nav-list li.hover-background::before {
+  opacity: 1; /* Show the background on hover */
 }
 
 ul.nav-list li a {
@@ -92,6 +131,8 @@ ul.nav-list li a {
 /* END OF HEADER */
 
 .main-content-container {
+  max-width: 100%;
+  max-height: 100%;
   grid-row: 2/8;
   grid-column: 1/9;
   display: grid;
@@ -111,15 +152,18 @@ ul.nav-list li a {
   display: grid;
   grid-row: 2/6;
   grid-column: 1/2;
+  height: 90%;
+  width: 90%;
+  margin: 2rem 1rem 0 1rem;
+  border-radius: 20%;
 }
 
 .active {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  margin-top: 4rem;
-  padding: 2rem 4rem;
+  display: flex;
+}
+
+.hideit {
+  display: none;
 }
 
 .contentP p {
@@ -127,12 +171,21 @@ ul.nav-list li a {
   line-height: 200%;
 }
 
-.hideit {
-  display: none;
+.overlay-left {
+  border-top-right-radius: 20%;
+  padding-left: 4rem;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 2rem;
+  padding: 2rem 4rem;
+  background: url(Material/Background/matiera-keraunoi.jpg) 0% 0% / 100%;
 }
 
-.overlay-left {
-  background: url(Material/Background/matiera-stabesmikroteres.jpg) 0% 0% 100%;
+.overlay-left span:hover {
+  transform: scale(1.2);
+  font-weight: 600;
 }
 
 /* CURRENT */
@@ -195,10 +248,18 @@ ul.nav-list li a {
   width: calc(100vw / 3);
   height: 55rem;
   display: grid;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   grid-row: 1/9;
   grid-column: 5/9;
   gap: 10rem;
-  background: url(Material/Background/matiera-megalistaba.jpg) 105% 12% / 173%;
+  background: url(Material/Background/matiera-megalistaba.jpg) 100% 16% / 146%;
+}
+
+.currentMouseoverExplanationContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .explanation-container {
@@ -206,14 +267,10 @@ ul.nav-list li a {
   flex-flow: column wrap;
 }
 
-.explanation-container {
-  margin-top: 4rem;
-}
-
 .explanation-container p {
   text-align: justify;
   padding: 0rem 6rem;
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 200%;
 }
 /* END OF INFO */
